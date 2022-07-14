@@ -1,5 +1,5 @@
 
-* {
+h2,h1,div,p,section,li,ul {
   box-sizing : border-box;
   margin     : 0;
   padding    : 0;
@@ -12,7 +12,7 @@
   }
   
   body {
-    margin: 0;
+ 
     background    :#242635;  
   }
   .menu {
@@ -50,6 +50,7 @@ display: inline-block;
     justify-content: center;
     position: sticky;
     top: 0px;
+    z-index: 10;
 }
 .hamburguer{
   display: flex;
@@ -100,6 +101,7 @@ display: inline-block;
     gap: 0px;
     justify-content: flex-end;
     /*flex-direction: row-reverse;*/
+   
   
   }
   .pages a{
@@ -152,7 +154,8 @@ display: inline-block;
   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
- 
+  margin-top: 10px;
+  padding: 30px;
 }
 
 .soy{
