@@ -1,5 +1,5 @@
 
-h2,h1,div,p,section,li,ul {
+h2,h1,div,p,section,li,ul, header, .navbar ,body{
   box-sizing : border-box;
   margin     : 0;
   padding    : 0;
@@ -18,9 +18,9 @@ h2,h1,div,p,section,li,ul {
   .menu {
     width: 30px;
     color: white;
-    background-color: #242635;
 
-    border        : 2px solid #34B0BE;
+
+    border        : 1px solid #3c4445;
     font-family   : monospace;
     display       : flex;
     align-items: center;
@@ -32,10 +32,12 @@ h2,h1,div,p,section,li,ul {
     line-height:70%;
     margin: 20px 0px 0px 20px;
     border-radius: 3px;
+
 }
 .menu :hover {
   color:#34B0BE;
   }
+
   .pages a{
     color: white;
     
@@ -51,7 +53,11 @@ display: inline-block;
     position: sticky;
     top: 0px;
     z-index: 10;
-}
+
+
+    align-items: center;
+
+  }
 .hamburguer{
   display: flex;
   align-items: center;
@@ -61,20 +67,30 @@ display: inline-block;
   font-size: 20px;
   color: white;
   text-decoration: none;
+  width: auto;
+  display: flex;
+ justify-content: center;
+align-items: center;
+}
+.pages>a{
+  text-decoration: none;
 
+  padding: 14px;
 }
 .pages a:hover{
   color: #34B0BE;
 }
+
 .checkbox{
   display: none;
 }
+/*
 
 @media screen and (min-width: 800px){
   .navbar{
     align-items: center;
-    background-color: #242635;
     display: flex;
+
   }
   .menu{
     visibility: hidden;
@@ -88,6 +104,7 @@ display: inline-block;
     padding: 14px;
   }
 }
+*/
 
 @media screen and (max-width: 800px){
   /*
@@ -101,15 +118,13 @@ display: inline-block;
     gap: 0px;
     justify-content: flex-end;
     /*flex-direction: row-reverse;*/
-   
-  
+    position: fixed;
   }
   .pages a{
     padding: 20px;
   }
   .pages{
     padding: 0%;
-    margin-top: 10px;
     line-height: 0px;
     display: flex;
     flex-direction: column;
@@ -121,28 +136,46 @@ display: inline-block;
     border-radius: 10px;
 
     border: #34B0BE solid 1px;
-    margin-left: 20px;
+    position: fixed;
+    left: 55px;
+    top: 10px;
+    border-radius: 5px;
+
   }
   .pages:before {
     content: ' ';
     display: block;
   position: absolute;
-    width: 85%;
-    height: 330%;
+    width: 99%;
+    height: 200px;
    z-index: -1;
     opacity: 0.9;
     background-color: #242635;
+    border-radius: 7px;
   }
   .checkbox:checked~.pages{
     opacity: 1;
     visibility: visible;
   }
   .menu {
-    position: sticky;
-    top: 30px;
+    visibility: visible;
+    position: fixed;
+    top: 0px;
+
   }
 }
+@media screen and (min-width: 800px){
+  .menu {
 
+    visibility: hidden;
+    display: none;
+  }
+  .navbar{
+    background: linear-gradient(10deg,#242635, #373a59,#242635);
+    box-shadow: 0 0 1px white;
+
+  }
+}
 
 .contenido{
   /*min-width: 700px;;*/
@@ -320,9 +353,9 @@ h2{
   text-align: center;
 }
 .about{
-  height: 300px;
+ 
   max-width: 70%;
-  margin: 40px auto;
+  margin: 30px auto;
   color: white;
   display: flex;
   flex-direction: column;
@@ -430,36 +463,6 @@ h3{
   border-radius: 10px;
 }
 
-@media screen and (min-width: 900px){
-  .serv {
-    max-width: 60%;
-  }
-  .servi{
-    gap: 30px;
-  }
-  .Myport{
-    width: 70%;
-    margin: 0 auto;
-  }
-  .ema{
-    width: 60%;
-  }
-  .celu{
-    width: 60%;
-  }
 
-  .Myport{
-    height: 400px;
-    width: 100%;
-  }
-  .port{
-    width: 100%;
-    height: 90%;
-  }
-  
-  .port div{
-    width: 30%;
-    height: 80%;
-  }
-}
+
 
