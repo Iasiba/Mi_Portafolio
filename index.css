@@ -268,12 +268,12 @@ align-items: center;
   height: 85%;
 }
 .foot-icons{
-  width:350px;
-  height: 80px;
+width: 80%;
   padding: 20px;
 
   margin: 5% auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: #353437;
@@ -290,17 +290,18 @@ align-items: center;
   justify-content: center;
 }
 .serv {
-  height: 300px;
   max-width: 90%;
   display: flex;
+ 
   flex-direction: column;
   margin: 0  auto; 
 }
 .servi{
-  height: 100%;
+
   width: 100%;
   display: flex;
-  justify-content: center;
+   flex-wrap: wrap;
+
   gap: 10px;
   align-items: center;
   text-align: center;
@@ -310,6 +311,7 @@ align-items: center;
 .servi div{
   background-color: white;
   width: 150px;
+  height: 250px;
   padding: 10px;
   border-radius: 10px;
 
